@@ -5,9 +5,9 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 
 
-class IdnowAutoidentPackage : ReactPackage {
+class IDnowAutoIdentPackage : ReactPackage {
     override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
-        return listOf(IdnowAutoidentModule(reactContext))
+        return listOf(IDnowAutoIdentModule(reactContext))
     }
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {

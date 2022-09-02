@@ -40,6 +40,9 @@ android {
     minSdkVersion getExtOrIntegerDefault('minSdkVersion')
     targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
     buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
+    renderscriptTargetApi 21
+    renderscriptSupportModeEnabled true
+    vectorDrawables.useSupportLibrary = true
   }
   buildTypes {
     release {
@@ -54,6 +57,13 @@ android {
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  packagingOptions{
+    pickFirst 'lib/mips/libRSSupport.so'
+    pickFirst 'lib/x86/libRSSupport.so'
+    pickFirst 'lib/armeabi-v7a/libRSSupport.so'
+    pickFirst 'lib/arm64-v8a/libRSSupport.so'
   }
 }
 
@@ -133,13 +143,14 @@ dependencies {
     //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation 'de.idnow.android.sdk:idnow-platform:4.19.1'
 // From node_modules
 }
 
 if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
-    libraryName = "IdnowAutoident"
+    libraryName = "IDnowAutoIdent"
     codegenJavaPackageName = "com.reactnativeidnowautoident"
   }
 }

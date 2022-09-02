@@ -55,9 +55,10 @@
     "@types/react": "~17.0.21",
     "@types/react-native": "0.68.0",
     "commitlint": "^17.0.2",
-    "eslint": "^8.4.1",
+    "eslint": "8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "4.6.0",
     "jest": "^28.1.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
@@ -108,7 +109,8 @@
     "parser": "@babel/eslint-parser",
     "extends": [
       "@react-native-community",
-      "prettier"
+      "prettier",
+      "plugin:react-hooks/recommended"
     ],
     "rules": {
       "prettier/prettier": [
