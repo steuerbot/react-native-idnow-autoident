@@ -6,7 +6,9 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-const IdnowAutoident = NativeModules.IDnowAutoIdent  ? NativeModules.IDnowAutoIdent  : new Proxy(
+const IDnowAutoIdent = NativeModules.IDnowAutoIdent
+  ? NativeModules.IDnowAutoIdent
+  : new Proxy(
       {},
       {
         get() {
@@ -15,6 +17,9 @@ const IdnowAutoident = NativeModules.IDnowAutoIdent  ? NativeModules.IDnowAutoId
       }
     );
 
-export function startAutoIdent(options: {id: string; language?: string}): Promise<string> {
-  return IdnowAutoident.startAutoIdent(options);
+export function startAutoIdent(options: {
+  id: string;
+  language?: string;
+}): Promise<string> {
+  return IDnowAutoIdent.startAutoIdent(options);
 }
