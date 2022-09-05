@@ -17,7 +17,7 @@ export default function App() {
     <View style={styles.container}>
       <TextInput value={id} onChangeText={setId} style={styles.textInput} />
       <Button title="Start AutoIdent" onPress={start} />
-      <Text>Result: {result}</Text>
+      <Text>Result: {JSON.stringify(result, null, 2)}</Text>
     </View>
   );
 }

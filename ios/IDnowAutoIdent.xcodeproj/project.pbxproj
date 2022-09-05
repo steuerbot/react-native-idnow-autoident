@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* IdnowAutoident.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* IdnowAutoident.m */; };
-		F4FF95D7245B92E800C19C63 /*  IdnowAutoident.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  IdnowAutoident.swift */; };
+		A6C0AC7F28C24BE400F49BE0 /* IDNowSDKCore-with-NFC in Frameworks */ = {isa = PBXBuildFile; productRef = A6C0AC7E28C24BE400F49BE0 /* IDNowSDKCore-with-NFC */; };
+		A6C0AC8028C5DF0200F49BE0 /* IDnowAutoIdent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* IDnowAutoIdent.m */; };
+		A6C0AC8328C5E53900F49BE0 /* libIDnowAutoIdent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 134814201AA4EA6300B7C361 /* libIDnowAutoIdent.a */; };
+		F4FF95D7245B92E800C19C63 /* IDnowAutoIdent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* IDnowAutoIdent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libIdnowAutoident.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIdnowAutoident.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5891CC2AC0600A0062D /* IdnowAutoident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdnowAutoident.m; sourceTree = "<group>"; };
-		F4FF95D5245B92E700C19C63 /* IdnowAutoident-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdnowAutoident-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* IdnowAutoident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdnowAutoident.swift; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libIDnowAutoIdent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIDnowAutoIdent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5891CC2AC0600A0062D /* IDnowAutoIdent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDnowAutoIdent.m; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* IDnowAutoIdent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IDnowAutoIdent-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4FF95D6245B92E800C19C63 /* IDnowAutoIdent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDnowAutoIdent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C0AC7F28C24BE400F49BE0 /* IDNowSDKCore-with-NFC in Frameworks */,
+				A6C0AC8328C5E53900F49BE0 /* libIDnowAutoIdent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +48,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libIdnowAutoident.a */,
+				134814201AA4EA6300B7C361 /* libIDnowAutoIdent.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,9 +56,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				F4FF95D6245B92E800C19C63 /* IdnowAutoident.swift */,
-				B3E7B5891CC2AC0600A0062D /* IdnowAutoident.m */,
-				F4FF95D5245B92E700C19C63 /* IdnowAutoident-Bridging-Header.h */,
+				F4FF95D6245B92E800C19C63 /* IDnowAutoIdent.swift */,
+				B3E7B5891CC2AC0600A0062D /* IDnowAutoIdent.m */,
+				F4FF95D5245B92E700C19C63 /* IDnowAutoIdent-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,9 +66,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* IdnowAutoident */ = {
+		58B511DA1A9E6C8500147676 /* IDnowAutoIdent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IdnowAutoident" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IDnowAutoIdent" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -73,10 +77,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				A6C0AC8228C5E2E200F49BE0 /* PBXTargetDependency */,
 			);
-			name = IdnowAutoident;
+			name = IDnowAutoIdent;
+			packageProductDependencies = (
+				A6C0AC7E28C24BE400F49BE0 /* IDNowSDKCore-with-NFC */,
+			);
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libIdnowAutoident.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libIDnowAutoIdent.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IdnowAutoident" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IDnowAutoIdent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -102,11 +110,14 @@
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
+			packageReferences = (
+				A6C0AC7D28C24BE400F49BE0 /* XCRemoteSwiftPackageReference "de.idnow.ios.sdk" */,
+			);
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* IdnowAutoident */,
+				58B511DA1A9E6C8500147676 /* IDnowAutoIdent */,
 			);
 		};
 /* End PBXProject section */
@@ -116,12 +127,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FF95D7245B92E800C19C63 /* IdnowAutoident.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* IdnowAutoident.m in Sources */,
+				F4FF95D7245B92E800C19C63 /* IDnowAutoIdent.swift in Sources */,
+				A6C0AC8028C5DF0200F49BE0 /* IDnowAutoIdent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6C0AC8228C5E2E200F49BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A6C0AC8128C5E2E200F49BE0 /* IDNowSDKCore-with-NFC */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		58B511ED1A9E6C8500147676 /* Debug */ = {
@@ -172,6 +190,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -215,6 +234,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -230,9 +250,9 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = IdnowAutoident;
+				PRODUCT_NAME = IDnowAutoIdent;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "IdnowAutoident-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "IDNowAutoIdent-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -249,9 +269,9 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = IdnowAutoident;
+				PRODUCT_NAME = IDnowAutoIdent;
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "IdnowAutoident-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "IDnowAutoIdent-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -259,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IdnowAutoident" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IDnowAutoIdent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -268,7 +288,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IdnowAutoident" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IDnowAutoIdent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
@@ -278,6 +298,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6C0AC7D28C24BE400F49BE0 /* XCRemoteSwiftPackageReference "de.idnow.ios.sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/idnow/de.idnow.ios.sdk.spm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6C0AC7E28C24BE400F49BE0 /* IDNowSDKCore-with-NFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C0AC7D28C24BE400F49BE0 /* XCRemoteSwiftPackageReference "de.idnow.ios.sdk" */;
+			productName = "IDNowSDKCore-with-NFC";
+		};
+		A6C0AC8128C5E2E200F49BE0 /* IDNowSDKCore-with-NFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C0AC7D28C24BE400F49BE0 /* XCRemoteSwiftPackageReference "de.idnow.ios.sdk" */;
+			productName = "IDNowSDKCore-with-NFC";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
 }
