@@ -30,7 +30,7 @@ class IDnowAutoIdentModule(reactContext: ReactApplicationContext) :
         when (iDnowResult.iDnowStatusCode) {
           IDnowResult.IDnowStatusCode.FINISHED -> promise.resolve("SUCCESS")
           IDnowResult.IDnowStatusCode.CANCELLED -> promise.reject("CANCELLED", "verification cancelled")
-          IDnowResult.IDnowStatusCode.ERROR -> promise.reject("ERROR", "verification error")
+          IDnowResult.IDnowStatusCode.ERROR -> promise.reject("ERROR", iDnowResult.message)
           else -> promise.reject("ERROR_UNSPECIFIED", "verification error (unspecified)")
         }
     })
